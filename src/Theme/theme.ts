@@ -1,13 +1,9 @@
 import { createTheme } from '@mui/material/styles';
-import { pink, yellow } from '@mui/material/colors';
+import { components } from './components';
+import { palette, typography } from './foundations';
 
 export const theme = createTheme({
-  palette: {
-    primary: {
-      main: pink[500],
-    },
-    secondary: {
-      main: yellow[500],
-    },
-  },
+  palette,
+  typography,
+  components,
 });
