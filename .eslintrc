@@ -13,29 +13,25 @@
     "sourceType": "module"
   },
   "parser": "@typescript-eslint/parser",
+  "settings": {
+    "react": {
+      "version": "18.1.0-next-aa05e7315-20220331"
+    }
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "react/function-component-definition": [
-      2,
-      {
-        "namedComponents": "arrow-function"
-      }
-    ],
-    "react/react-in-jsx-scope": "off",
-    "import/prefer-default-export": "off",
-    "react/prop-types": "off",
-    "react/require-default-props": "off",
-    "react/jsx-props-no-spreading": "off",
     "no-console": "error",
-    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
     "prettier/prettier": "error"
   }
 }
